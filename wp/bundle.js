@@ -65,10 +65,15 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const name = 'Bob';
-setTimeout(() => alert(`Webpack worked, ${name}`), 300);
+"use strict";
+
+
+var name = 'Bob';
+setTimeout(function () {
+  return alert('Webpack worked, ' + name);
+}, 300);
 
 /***/ })
 /******/ ]);
